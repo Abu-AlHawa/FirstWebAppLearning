@@ -1,11 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>My First Web</title>
+    <title>Split Screen Page</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<h1> Welcome To My Website</h1>
-<br>
+<div class="container">
+    <div class="split left">
+        <h1>The Cyclist</h1>
+        <a href="menu.html" class="button">Read More</a>
+    </div>
+    <div class="split right">
+        <h1>The Pro Cyclist</h1>
+        <a href="menu.html" class="button">Read More</a>
+    </div>
+</div>
+
+<script src='script.js'></script>
+
+<script type='text/javascript'>
+  // Your existing JS code
+  function redirectToSplitScreen() {
+      window.location.href = "menu.html";
+  }
+</script>
+
 </body>
 </html>
+
